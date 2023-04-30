@@ -1,0 +1,60 @@
+/* CSS HEX
+--cello: #1c2c58;
+--flamingo: #f25b2c;
+--amour: #fbf3fa;
+--sun: #f9b915;
+--caribbean-green: #05c4ac;
+--manatee: #999da5;
+--sweet-pink: #fb9c94;
+--pale-slate: #ccc5c9;
+--zinnwaldite: #eac2a8; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+:root{
+    /* CSS HEX */
+    --color1: #1c2c58;
+    --color2: #f25b2c;
+    --color3: #fbf3fa;
+    --color4: #f9b915;
+    --color5: #05c4ac;
+    --color6: #999da5;
+    --color7: #fb9c94;
+    --color8: #ccc5c9;
+    --color9: #eac2a8;
+    --margin: 2em auto;
+    --padding: 1em 0.5em;
+    --width: 90%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    font-size: 10px;
+}
+section{
+    width: var(--width);
+    max-width: 700px;
+    margin: 5em auto;
+    font-size: 1.6em;
+}
+nav{
+    text-align: center;
+    margin: 1em auto;
+}
+nav a{
+    color: var(--color1);
+    font-size: 1.3em;
+    font-style: none;
+    font-weight: 700;
+    background-color: var(--color5);
+    border-radius: 0.7em;
+    text-decoration: none;
+    padding: 0.5em;
+}
+nav a:hover{
+    background-color: var(--color1);
+    color: var(--color3);
+    transition-duration: 0.2s;
+}
