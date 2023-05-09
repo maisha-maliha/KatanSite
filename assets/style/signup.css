@@ -1,63 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-:root{
-    /* CSS HEX */
-    --color1: #1c2c58;
-    --color2: #f25b2c;
-    --color3: #fbf3fa;
-    --color4: #f9b915;
-    --color5: #05c4ac;
-    --color6: #999da5;
-    --color7: #fb9c94;
-    --color8: #ccc5c9;
-    --color9: #eac2a8;
-    --margin: 2em auto;
-    --padding: 0.5em 1em;
-    --width: 90%;
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-}
-body{
-    background-color: var(--color7);
-    font-size: 10px;
-}
-nav{
-    text-align: center;
-    margin: 1em auto;
-}
-nav a{
-    color: var(--color1);
-    font-size: 1.3em;
-    font-style: none;
-    font-weight: 700;
-    background-color: var(--color5);
-    border-radius: 0.7em;
-    text-decoration: none;
-    padding: 0.5em;
-}
-nav a:hover{
-    background-color: var(--color1);
-    color: var(--color3);
-    transition-duration: 0.2s;
-}
 section{
     width: var(--width);
     max-width: 600px;
-    margin:  3em auto;
+    margin:  2em auto;
+    border: 2px solid var(--color7);
+    border-radius: 1em;
+    box-shadow: var(--color6) -1em 1em;
+    overflow: hidden;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 h2{
-    color: var(--color5);
+    color: var(--color1);
     text-align: center;
     margin-top: 1em;
     font-size: 2.5em;
 }
-.login{
-    background-color: var(--color1);
+.signup{
+    background-color: var(--color3);
     padding: var(--padding);
 }
 .people{
@@ -65,10 +24,10 @@ h2{
 }
 .people img{
     width: 100%;
-    padding: 50px 0;
+    padding: 80px 0;
 }
 label{
-    color: var(--color3);
+    color: var(--color1);
     font-size: 1.2em;
     font-weight: 700;
     padding: var(--padding);
@@ -82,15 +41,18 @@ input{
     outline: none;
     border: solid 2px black;
     border-radius: 1.5em;
+    box-shadow: var(--color8) -0.3em 0.3em;
     background-color: var(--color4);
 }
 button{
     font-size: 1.4em;
     font-weight: 700;
-    margin-bottom: 1em;
+    margin-top: 0.8em;
+    margin-bottom: 1.8em;
     padding: var(--padding);
     border: 3px solid var(--color2);
     border-radius: 1.1em;
+    box-shadow: var(--color8) -0.3em 0.5em;
     background-color: var(--color2);
     cursor: pointer;
 }
